@@ -34,6 +34,11 @@ public class MainActivity extends AppCompatActivity {
         // Find the viewpager that will allows user to swipe between fragments
         ViewPager viewPager=(ViewPager)findViewById(R.id.viewpager);
 
+        // Create an adapter that knows which fragment should be shown on each page
+        SimpleFragmentPagerAdapter adapter=new SimpleFragmentPagerAdapter(getSupportFragmentManager());
+
+        // Set the adapter onto the viewpager
+        viewPager.setAdapter(adapter);
 
         //Find the TabsLayout to show the tabs to the user
         TabLayout tabLayout=(TabLayout)findViewById(R.id.sliding_tabs);

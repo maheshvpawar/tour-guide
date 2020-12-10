@@ -27,6 +27,13 @@ import android.view.ViewGroup;
  * A simple {@link Fragment} subclass.
  */
 public class ParksFragment extends Fragment {
+    @Override
+    public View onCreateView( LayoutInflater inflater,  ViewGroup container,  Bundle savedInstanceState) {
 
+        // Creating the View that returns all the views on the fragment
+        View rootView=inflater.inflate(R.layout.places_list,container,false);
+        //TODO: Insert the Logic for fragment here
+        return rootView;
+    }
 
 }
