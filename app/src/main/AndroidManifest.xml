@@ -9,6 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TourGuide">
+        <activity android:name=".ShoppingActivity"></activity>
+        <activity android:name=".ParksActivity" />
+        <activity android:name=".MonumentActivity" />
+        <activity android:name=".CultureActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
