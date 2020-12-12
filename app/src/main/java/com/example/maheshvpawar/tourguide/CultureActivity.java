@@ -25,5 +25,10 @@ public class CultureActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_category);
+
+        // Creating fragment transaction to show it within the container activity
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.container,new CultureFragment())
+                .commit();
     }
 }

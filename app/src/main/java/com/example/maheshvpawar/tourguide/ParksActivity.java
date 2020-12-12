@@ -26,5 +26,10 @@ public class ParksActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_category);
 
+        // Creating fragment transaction to show it within the container activity
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.container,new ParksFragment())
+                .commit();
+
     }
 }
