@@ -38,14 +38,14 @@ public class ParksFragment extends Fragment {
 
         //  Create a list of places
         final ArrayList<Place> places = new ArrayList<Place>();
-        places.add(new Place(R.drawable.sanjay_gandhi,"Sanjay Gandhi National Park (SGNP)"));
-        places.add(new Place(R.drawable.lions_juhu,"Lions Juhu Children’s Municipal Park"));
-        places.add(new Place(R.drawable.kamala_nehru,"Hanging Gardens and Kamala Nehru Park"));
-        places.add(new Place(R.drawable.shivaji_park,"Shivaji Park"));
-        places.add(new Place(R.drawable.horniman_garden,"Horniman Circle Garden"));
-        places.add(new Place(R.drawable.maharashtera_nature,"Maharashtra Nature Park"));
-        places.add(new Place(R.drawable.five_gradens,"Five Gardens"));
-        places.add(new Place(R.drawable.oval_maiden,"Oval Maidan"));
+        places.add(new Place(R.drawable.sanjay_gandhi,getString(R.string.sgnp)));
+        places.add(new Place(R.drawable.lions_juhu,getString(R.string.lions_juhu)));
+        places.add(new Place(R.drawable.kamala_nehru,getString(R.string.kamala_nehru)));
+        places.add(new Place(R.drawable.shivaji_park,getString(R.string.shivaji_park)));
+        places.add(new Place(R.drawable.horniman_garden,getString(R.string.horniman_circle)));
+        places.add(new Place(R.drawable.maharashtera_nature,getString(R.string.maharashtra_nature_park)));
+        places.add(new Place(R.drawable.five_gradens,getString(R.string.five_gardens)));
+        places.add(new Place(R.drawable.oval_maiden,getString(R.string.oval_maidan)));
 
         //  Creating object of an PlaceAdapter
         final PlaceAdapter adapter=new PlaceAdapter(getActivity(),places);

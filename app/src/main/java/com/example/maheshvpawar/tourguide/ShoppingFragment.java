@@ -38,12 +38,12 @@ public class ShoppingFragment extends Fragment {
 
         //  Create a list of places
         final ArrayList<Place> places = new ArrayList<Place>();
-        places.add(new Place(R.drawable.pheonix_market,"Pheonix Marketcity"));
-        places.add(new Place(R.drawable.linking_road,"Linking Road Shopping Center"));
-        places.add(new Place(R.drawable.palladium, "Palladium"));
-        places.add(new Place(R.drawable.oberoi_mall,"Oberoi Mall"));
-        places.add(new Place(R.drawable.infiniti_mall,"Infiniti Mall"));
-        places.add(new Place(R.drawable.inorbit,"Inorbit Mall"));
+        places.add(new Place(R.drawable.pheonix_market,getString(R.string.pheonix_marketcity)));
+        places.add(new Place(R.drawable.linking_road,getString(R.string.linking_road_shopping)));
+        places.add(new Place(R.drawable.palladium, getString(R.string.palladium)));
+        places.add(new Place(R.drawable.oberoi_mall,getString(R.string.oberoi_mall)));
+        places.add(new Place(R.drawable.infiniti_mall,getString(R.string.infiniti_mall)));
+        places.add(new Place(R.drawable.inorbit,getString(R.string.inorbit_mall)));
 
 
         //  Creating object of an PlaceAdapter

@@ -43,19 +43,19 @@ public class CultureFragment extends Fragment {
 
         //  Create a list of places
         final ArrayList<Place> places = new ArrayList<Place>();
-        places.add(new Place(R.drawable.mumbadevi, "Mumba Devi Temple"));
-        places.add(new Place(R.drawable.siddhivianayak,"Shri Siddhi Vinayak Ganapati Mandir"));
-        places.add(new Place(R.drawable.mahalakshmi, "Shree Mahalakhmi Temple"));
-        places.add(new Place(R.drawable.babulnath, "Babulnath Temple"));
-        places.add(new Place(R.drawable.iskon_juhu, "International Society for Krishna Consciousness® (ISKCON® - Juhu)"));
-        places.add(new Place(R.drawable.baps,"BAPS Shri Swaminarayan Mandir"));
-        places.add(new Place(R.drawable.haji_ali,"Haji Ali Dargah"));
-        places.add(new Place(R.drawable.st_thomas_cathedral,"St. Thomas Cathedral"));
-        places.add(new Place(R.drawable.global_vipasana_pagoda,"Global Vipassana Pagoda"));
-        places.add(new Place(R.drawable.bandra_fort,"Bandra Fort"));
-        places.add(new Place(R.drawable.vasai_fort,"Vasai Fort"));
-        places.add(new Place(R.drawable.elephanta_caves,"Elephanta Caves"));
-        places.add(new Place(R.drawable.kanheri_caves,"Kanheri Caves"));
+        places.add(new Place(R.drawable.mumbadevi, getString(R.string.mumba_devi)));
+        places.add(new Place(R.drawable.siddhivianayak,getString(R.string.siddhivinayak_temple)));
+        places.add(new Place(R.drawable.mahalakshmi, getString(R.string.mahalakshmi_temple)));
+        places.add(new Place(R.drawable.babulnath, getString(R.string.babulnath_temple)));
+        places.add(new Place(R.drawable.iskon_juhu, getString(R.string.iskon_juhu)));
+        places.add(new Place(R.drawable.baps,getString(R.string.swaminarayan_mandir)));
+        places.add(new Place(R.drawable.haji_ali,getString(R.string.haji_ali)));
+        places.add(new Place(R.drawable.st_thomas_cathedral,getString(R.string.st_thomas)));
+        places.add(new Place(R.drawable.global_vipasana_pagoda,getString(R.string.global_vipassana_pagoda)));
+        places.add(new Place(R.drawable.bandra_fort,getString(R.string.bandra_fort)));
+        places.add(new Place(R.drawable.vasai_fort,getString(R.string.vasai_fort)));
+        places.add(new Place(R.drawable.elephanta_caves,getString(R.string.elephanta_caves)));
+        places.add(new Place(R.drawable.kanheri_caves,getString(R.string.kanheri_caves)));
 
         //  Creating object of an PlaceAdapter
         final PlaceAdapter adapter=new PlaceAdapter(getActivity(),places);
