@@ -49,6 +49,7 @@ public class ShoppingFragment extends Fragment {
         //  Creating object of an PlaceAdapter
         final PlaceAdapter adapter=new PlaceAdapter(getActivity(),places);
         ListView listView=(ListView)rootView.findViewById(R.id.list);
+        
         // Set adapter on ListView object
         listView.setAdapter(adapter);
         return rootView;
