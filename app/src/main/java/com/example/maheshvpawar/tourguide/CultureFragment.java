@@ -26,6 +26,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import java.util.ArrayList;
+
 /**
  * A simple {@link Fragment} subclass.
  */
@@ -37,7 +39,9 @@ public class CultureFragment extends Fragment {
 
         // Creating the View that returns all the views on the fragment
         View rootView = inflater.inflate(R.layout.places_list, container, false);
-        //TODO: Insert the Logic for fragment here
+
+        //  Create a list of places
+        final ArrayList<Place> places = new ArrayList<Place>();
         return rootView;
     }
 }
