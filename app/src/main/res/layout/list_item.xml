@@ -10,6 +10,7 @@
         android:id="@+id/image_view"
         android:layout_width="88dp"
         android:layout_height="88dp"
+        android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -19,13 +20,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
+        android:layout_marginStart="16dp"
         android:text="@string/textview"
         android:textAlignment="center"
-        android:textSize="18sp"
-        android:textStyle="bold"
+        android:textSize="14sp"
 
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/image_view"
         app:layout_constraintTop_toTopOf="parent" />
 

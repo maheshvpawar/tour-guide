@@ -22,6 +22,9 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
+
+import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -32,7 +35,24 @@ public class MonumentFragment extends Fragment {
 
         // Creating the View that returns all the views on the fragment
         View rootView = inflater.inflate(R.layout.places_list, container, false);
-        //TODO: Insert the Logic for fragment here
+
+        //  Create a list of places
+        final ArrayList<Place> places = new ArrayList<Place>();
+        places.add(new Place(R.drawable.gateway_of_india, "Gateway Of India"));
+        places.add(new Place(R.drawable.cst,"Chhatrapati Shivaji Maharaj Terminus"));
+        places.add(new Place(R.drawable.shivaji_maharaj,"Chhatrapati Shivaji Maharaj Vastu Sangrahalaya"));
+        places.add(new Place(R.drawable.mnc,"Brihanmumbai Municipal Corporation"));
+        places.add(new Place(R.drawable.rajabai_clock_tower,"Rajabai Clock Tower"));
+        places.add(new Place(R.drawable.asiatic_society_hall,"The Asiatic Society of Mumbai Town Hall"));
+        places.add(new Place(R.drawable.david_sasson_lib,"David Sassoon Library and Reading Room"));
+        places.add(new Place(R.drawable.nationalgalleryofart,"National Gallery of Modern Art"));
+
+        //  Creating object of an PlaceAdapter
+        final PlaceAdapter adapter=new PlaceAdapter(getActivity(),places);
+        ListView listView=(ListView)rootView.findViewById(R.id.list);
+        // Set adapter on ListView object
+        listView.setAdapter(adapter);
+
         return rootView;
     }
 
