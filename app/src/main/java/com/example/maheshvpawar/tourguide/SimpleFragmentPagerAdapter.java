@@ -8,21 +8,21 @@ import androidx.fragment.app.FragmentPagerAdapter;
 
 public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
     // String array to store tabTitles
-    private String tabTitles[] = new String[] { "Culture", "Monuments", "Parks","Shopping" };
-    public SimpleFragmentPagerAdapter(FragmentManager fm)
-    {
+    private String tabTitles[] = new String[]{"Culture", "Monuments", "Parks", "Shopping"};
+
+    public SimpleFragmentPagerAdapter(FragmentManager fm) {
         super(fm);
     }
 
     @Override
     public Fragment getItem(int position) {
-        if(position==0){
+        if (position == 0) {
             return new CultureFragment();
-        }else if (position==1){
+        } else if (position == 1) {
             return new MonumentFragment();
-        }else if (position==2){
+        } else if (position == 2) {
             return new ParksFragment();
-        }else {
+        } else {
             return new ShoppingFragment();
         }
     }
