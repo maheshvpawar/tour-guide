@@ -62,6 +62,7 @@ public class CultureFragment extends Fragment {
         ListView listView=(ListView)rootView.findViewById(R.id.list);
         // Set adapter on ListView object
         listView.setAdapter(adapter);
+
         return rootView;
     }
 }
